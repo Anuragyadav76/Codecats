@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,s;
+	printf("Enter the three numbers\n");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b)
+	{
+		if(a>c)
+			s=a;
+		else
+			s=c;
+	}
+	if(b>c)
+	{
+		if(b>a)
+			s=b;
+		else
+			s=a;
+	}
+	if(c>a)
+	{
+		if(c>b)
+			s=c;
+		else
+			s=b;
+	}
+	printf("The maximum number is %d",s);
+getch();
+return 0;
+}
