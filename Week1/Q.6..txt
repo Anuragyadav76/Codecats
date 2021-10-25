@@ -1,0 +1,26 @@
+//Program to print the week day name starting from monday - 1
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("Enter the week number-\n");
+	scanf("%d",&n);
+	if(n==1)
+		printf("MONDAY");
+	if(n==2)
+		printf("TUESDAY");
+	if(n==3)
+		printf("WEDNESDAY");
+	if(n==4)
+		printf("THURSDAY");
+	if(n==5)
+		printf("FRIDAY");
+	if(n==6)
+		printf("SATURDAY");
+	if(n==7)
+		printf("SUNDAY");
+	
+	
+getch();
+return 0;
+}
