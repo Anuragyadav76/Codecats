@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	char n;
+	printf("Enter the character to be checked-\n");
+	scanf("%c",&n);
+	if(n>47 && n<58)
+		printf("The input character is a digit");
+	else if((n>64 && n<91)||(n>96 && n<123))
+			printf("The input character is a alphabet");
+	else 
+			printf("The input character is a special character");
+	
+	
+getch();
+return 0;
+}
