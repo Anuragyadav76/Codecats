@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,f=1;
+	printf("Enter the number whose factorial to be calculated\n");
+	scanf("%d",&n);
+	printf("The factorial of %d is :\n\n",n);
+	for(i=n;i>=1;i--)
+		{
+			f=f*i;
+			printf("%d*",i);
+		}
+	printf("\b=%d",f);
+	
+	
+	
+	getch();
+	return 0;
+}
