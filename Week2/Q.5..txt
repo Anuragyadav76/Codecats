@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int n,i;
+	printf("Enter the number\n");
+	scanf("%d",&n);
+	for(i=n;i>0;)
+		{
+			printf("%d",(i%10));
+			i=i/10;
+		}
+	getch();
+	return 0;
+}
