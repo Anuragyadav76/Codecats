@@ -2,7 +2,7 @@
 int main()
 {
 	int n,i,count=0;;
-	long int f=1,k,j,l;
+	unsigned long long f=1,k,j,l;
 	//Enter the number of numbers
 	scanf("%d",&n);
 	for(i=1;i<=n;i++)
@@ -15,7 +15,7 @@ int main()
 			//loop to calculate factorial
 			for(j=k;j>=1;j--)
 				f=f*j;
-			printf("The factorial of above number is %ld\n",f);
+			//printf("%llu\n",f);
 			
 			//loop to count number of zeroes
 			for(l=f;l>0;)
@@ -28,7 +28,7 @@ int main()
 				if((l%10)!=0)
 					break;
 			}
-			printf("and the number of zeroes are: %d\n",count);
+			printf("%d\n",count);
 			count=0;
 			f=1;
 	}
