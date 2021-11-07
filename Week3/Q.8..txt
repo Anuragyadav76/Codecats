@@ -1,0 +1,51 @@
+#include<stdio.h>
+int main()
+{
+	int T,G,N,I,Q,i,j,k,l,m,n,countH=0,counT=0;
+	scanf("%d",&T);
+	scanf("%d",&G);
+	char a[N];
+	for(i=1;i<=T;i++)
+	{
+		for(j=1;j<=G;j++)
+		{
+			scanf("%d %d %d",&I,&N,&Q);
+			for(k=0;k<N;k++)
+			{
+				if(I==1)
+					a[k]='H';
+				else if(I==2)
+					a[k]='T';
+				//printf("%c ",a[k]);
+			}
+			//printf("\n");
+			for(l=0;l<N;l++)
+			{
+				for(m=0;m<=l;m++)
+				{
+					if(a[m]=='H')
+						a[m]='T';
+					else if(a[m]=='T')
+						a[m]='H';
+				}
+			}
+			for(n=0;n<N;n++)
+			{
+			//	printf("%c ",a[n]);
+				if(a[n]=='H')
+					countH++;
+				else if(a[n]=='T')
+					counT++;
+			}
+		//	printf("\n");
+			if(Q==1)
+				printf("%d\n",countH);
+			else if(Q==2)
+				printf("%d\n",counT);
+			countH=0,counT=0;
+		}
+		
+	}
+	return 0;
+}
+	
