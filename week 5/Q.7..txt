@@ -1,0 +1,17 @@
+Q.Print elements of array using pointer
+Solution-
+int main()
+{
+	int a[10],*p,i;
+	printf("Enter 10 numbers\n");
+	for(i=0;i<10;i++)
+		scanf("%d",&a[i]);
+	p=a;
+	for(i=0;i<10;i++)
+	{
+		printf("\n%d",*p);
+		p++;
+	}
+	getch();
+	return 0;
+}
