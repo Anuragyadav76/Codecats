@@ -1,0 +1,12 @@
+Q. Pointer to Pointer in C 
+Solution-
+int main()
+{
+	int a=5,*p,**pp,***x;
+	p=&a;
+	pp=&p;
+	x=&pp;
+	printf("\n%d, %d, %d",a,*p,**pp);
+	getch();
+	return 0;
+}
