@@ -1,0 +1,17 @@
+Q. How to access and modify value of a memory location through address using pointer in c programming?
+solution-
+#include<stdio.h>
+int main()
+{
+	int a=5;
+	int *p;
+	p=&a;
+	a=a+*p;
+	printf("value of a= %d\n",a);
+	printf("value of a= %d\n", *p);
+	*p=*p+a;
+	printf("value of a= %d\n",a);
+	printf("value of a= %d\n", *p);
+	getch();
+	return 0;
+}
