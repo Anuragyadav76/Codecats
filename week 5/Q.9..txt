@@ -1,0 +1,14 @@
+Q. void pointer in c.
+Solution-
+int main()
+{
+	int a=5;
+	float b=10.5;
+	void *p;
+	p=&a;
+	printf("\n Value of a= %d",*(int *)p);
+	p=&b;
+	printf("\n Value of a= %f",*(float *)p);
+	getch();
+	return 0;
+}
