@@ -1,0 +1,15 @@
+Q.How to Calculate factorial of a number using pointer
+Solution- 
+#include<stdio.h>
+int main()
+{
+	int n,*p,f=1,i;
+	printf("Enter the number\n");
+	scanf("%d",&n);
+	p=&f;
+	for(i=1;i<=n;i++)
+		*p=(*p)*i;
+	printf("Factorial of %d is %d",n,*(p));
+	getch();
+	return 0;
+}
