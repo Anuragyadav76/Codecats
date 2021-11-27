@@ -1,0 +1,16 @@
+Q.Sum of two numbers using pointers.
+Solution-
+#include<stdio.h>
+int main()
+{
+	int a,b,c,*x,*y,*z;
+	printf("Enter the numbers to be added\n");
+	scanf("%d%d",&a,&b);
+	x=&a;
+	y=&b;
+	z=&c;
+	(*z)=(*x)+(*y);
+	printf("The sum of numbers is %d",c);
+	getch();
+	return 0;
+}
