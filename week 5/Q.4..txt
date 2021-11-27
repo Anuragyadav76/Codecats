@@ -1,0 +1,18 @@
+Q.Swap two variables without using third variable using pointer
+Solution-  
+#include<stdio.h>
+int main()
+{
+	int a,b,*p1,*p2;
+	printf("Enter the numbers a and b to be swapped\n");
+	scanf("%d%d",&a,&b);
+	p1=&a;
+	p2=&b;
+	
+	*p1=*p1+*p2;
+	*p2=*p1-*p2;
+	*p1=*p1-*p2;
+	printf("After swapping, new numbers\na=%d \nb=%d",a,b);
+	getch();
+	return 0;
+}
