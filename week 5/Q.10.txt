@@ -1,0 +1,21 @@
+Q. Find out maximum and minimum from array using pointer
+Solution-
+#include <stdio.h>
+int main()
+{
+	int arr[10],i,*p,max=-32768,min=32767;
+	printf("enter the 10 elements of array\n");
+	for(i=0;i<10;i++)
+		scanf("%d",&arr[i]);
+	p=arr;
+	for(i=0;i<10;i++)
+	{
+		if(*p>max)
+			max=*p;
+		if(*p<min)
+			min=*p;
+		p++;
+	}
+	printf("\nMaximum= %d \nMinimum= %d\n",max,min);
+	return 0;
+}
