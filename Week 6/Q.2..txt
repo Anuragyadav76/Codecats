@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+	int count=0;
+	char num[20];
+	printf("enter the string of numbers\n");
+	gets(num);
+	for(int i=1;num[i];i++)
+		{
+			if(num[i]=='0')
+	{
+		printf("This number is a duck number");
+		count++;
+		break;
+	}
+		}
+		if(count==0)
+			printf("The entered number is not a duck number");
+	return 0;
+}
